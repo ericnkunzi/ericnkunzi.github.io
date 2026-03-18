@@ -1,19 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twegerane - Smart Carpooling AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        header a {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #f59e0b;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        header a:hover {
+            background-color: #d97706;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: #1e3a8a;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+        }
+
+        .feature-card p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #f59e0b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            section h2 {
+                font-size: 1.8em;
+            }
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>🚗 Twegerane</h1>
-    <p>AI-powered carpooling platform for Africa</p>
 
-    <h2>Problem</h2>
-    <p>Transport is expensive and inefficient in African cities.</p>
+    <header>
+        <h1>🚗 Twegerane</h1>
+        <p>AI-powered carpooling platform transforming mobility in Africa</p>
+        <a href="#join">Join Us</a>
+    </header>
 
-    <h2>Solution</h2>
-    <p>We connect drivers and passengers using AI to reduce cost and traffic.</p>
+    <section id="problem">
+        <h2>The Problem</h2>
+        <p>Transport in African cities is often expensive, inefficient, and environmentally unsustainable.</p>
+    </section>
 
-    <h2>Coming Soon</h2>
-    <p>Join us to transform mobility in Africa.</p>
+    <section id="solution">
+        <h2>Our Solution</h2>
+        <p>Twegerane intelligently connects drivers and passengers using AI, reducing travel costs, traffic congestion, and emissions.</p>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>Smart Matching</h3>
+                <p>AI predicts demand and matches drivers with passengers for the most efficient routes.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Cost Reduction</h3>
+                <p>Shared rides reduce individual transport expenses while optimizing vehicle usage.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Environmental Impact</h3>
+                <p>By promoting carpooling, we reduce traffic congestion and vehicle emissions in urban areas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="coming-soon">
+        <h2>Coming Soon</h2>
+        <p>Join our early access program and be part of the mobility revolution in Africa.</p>
+        <p id="join"><a href="mailto:info@twegerane.com">Sign Up for Updates</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Twegerane. All rights reserved.</p>
+        <p>Follow us: <a href="https://github.com/ericnkunzi" target="_blank">GitHub</a> | <a href="#" target="_blank">LinkedIn</a></p>
+    </footer>
+
 </body>
 </html>
